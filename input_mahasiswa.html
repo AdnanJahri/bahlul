@@ -1,0 +1,38 @@
+<!-- Form Input Data Mahasiswa -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data Mahasiswa</title>
+</head>
+<body>
+    <h2>Form Input Data Mahasiswa</h2>
+    <form action="input_mahasiwa.php" method="post">
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id"><br><br>
+
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="jurusan">Jurusan:</label><br>
+        <select id="jurusan" name="jurusan">
+            <option value="Biology">Biology</option>
+            <option value="Comp. Sci.">Comp. Sci.</option>
+            <option value="Elec. Eng.">Elec. Eng.</option>
+            <option value="Finance">Finance</option>
+            <option value="History">History</option>
+            <option value="Music">Music</option>
+            <option value="Physics">Physics</option>
+        </select>
+        <br><br>
+        <!-- <input type="text" id="jurusan" name="jurusan" required><br><br> -->
+
+        <label for="sks">SKS:</label><br>
+        <input type="number" id="sks" name="sks" required><br><br>
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
